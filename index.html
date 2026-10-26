@@ -1,106 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Personal Finance Advisor Bot</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Finance Advisor Bot</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
-<div class="app">
+<div class="app-shell">
   <aside class="sidebar">
-    <div class="brand"><b>SKILL<br>WALLET</b><span>A.I. - Skill Product</span></div>
+    <div class="brand"><span class="brand-mark">S</span><div><b>SKILL</b><b>WALLET</b><small>BUILD • LEARN • GROW</small></div></div>
     <nav>
-      <a>⌘ <span>Dashboard</span></a>
+      <a class="active">▦ <span>Dashboard</span></a>
       <a>♜ <span>Skill Bank</span></a>
-      <a class="active">▣ <span>Skill Wallet</span></a>
-      <a>▭ <span>Skill Card</span></a>
+      <a>▣ <span>Skill Wallet</span></a>
+      <a>▤ <span>Skill Card</span></a>
       <a>♧ <span>Skill Credits</span></a>
     </nav>
   </aside>
 
   <main class="main">
     <header class="topbar">
-      <div class="crumb">▣ &nbsp; Dashboard &nbsp;›&nbsp; Skillwallet &nbsp;›&nbsp; Projects</div>
-      <div class="account"><span>✦ 0 AI Token</span><span>● 600 Credits</span><span>🛒</span><b>HP</b></div>
+      <div class="crumb">Dashboard &nbsp;›&nbsp; SkillWallet &nbsp;›&nbsp; Project</div>
+      <div class="top-actions"><span>✦ 0 AI Token</span><span>🪙 600 Credits</span><span>🛒</span><span class="avatar">HP</span></div>
     </header>
 
-    <div class="content">
-      <section class="title-row">
+    <section class="project-head">
+      <div>
         <h1>Personal Finance Advisor Bot</h1>
-        <div class="tabs"><button class="selected">Overview</button><button>Workspace</button><button>Kanban</button></div>
-      </section>
+        <p>AI-powered personal finance assistant for smarter budgeting and saving.</p>
+      </div>
+      <div class="tabs"><button class="selected">Overview</button><button>Workspace</button><button>Kanban</button></div>
+    </section>
 
-      <div class="notice"><strong>Add Demo and GitHub links!</strong><br>
-      <small>Please update the demo and GitHub links so that your mentor can review and evaluate your project.</small></div>
+    <div class="notice"><div>✨</div><div><b>Personal Finance Advisor Bot</b><br>Track income, manage expenses and receive personalized financial insights.</div></div>
 
-      <div class="layout">
-        <article class="description">
-          <div class="chips"><span>Finance</span><span>Individual</span></div>
-          <p>The <b>Personal Finance Advisor Bot</b> is an AI-powered financial planning assistant developed to help individuals take control of their personal finances with clarity and confidence. The system enables users to record monthly income, log daily and weekly expenses by category, receive personalized budget plans, and track saving progress within a centralized digital environment. By integrating modern backend technology with AI-driven financial analysis, the platform ensures accurate budget generation, intelligent spending insights, and structured monthly financial reporting.</p>
-          <p>The platform is designed with a scalable full-stack architecture built on Flask, SQLAlchemy, and an AI engine to support efficient financial planning and productivity enhancement for individuals managing personal budgets. The Personal Finance Advisor Bot reduces manual financial tracking complexity by automating budget generation and providing structured saving recommendations. The system also supports future enhancements such as predictive spending analytics, investment suggestions, goal-based savings tracking, and advanced AI-driven financial health monitoring, making it a modern and adaptable solution for personal finance management.</p>
-
+    <section class="grid">
+      <div class="content">
+        <div class="tags"><span>Finance</span><span>Individual</span></div>
+        <article class="card intro">
+          <p>The <b>Personal Finance Advisor Bot</b> is an AI-powered financial planning assistant developed to help individuals take control of their personal finances with clarity and confidence.</p>
+          <p>The system enables users to record monthly income, log daily and weekly expenses by category, receive personalized budget plans, and track saving progress within a centralized digital environment.</p>
+          <p>By integrating modern technologies with AI-driven financial analysis, the platform provides accurate budget guidance, intelligent spending insights, and structured monthly financial reporting.</p>
           <h2>Scenarios</h2>
-          <p><b>Scenario 1:</b> A salaried professional logs monthly income and daily expenses across categories such as rent, food, transport, and entertainment. The system analyzes the spending data, identifies overspending areas, and generates a personalized budget plan with actionable saving suggestions. The user receives a monthly summary report showing income vs. expenses, savings achieved, and financial goals for the following month.</p>
-          <p><b>Scenario 2:</b> A college student uses the Personal Finance Advisor Bot to manage a limited monthly allowance across essential and discretionary spending categories. The platform helps the student set realistic budget limits, track spending habits, and receive AI-powered recommendations for reducing unnecessary expenditures. This enables better financial discipline and improved savings management within a constrained budget.</p>
-          <p><b>Scenario 3:</b> A freelancer with variable monthly income uses the platform to log earnings from multiple clients and track project-related expenses. The system adapts budget recommendations based on fluctuating income patterns, highlights months with reduced saving capacity, and suggests strategies for building an emergency fund. By maintaining structured financial tracking, the platform helps improve long-term money management and financial stability.</p>
-          <p><b>Scenario 4:</b> A household manager uses the system to monitor shared family income and expenses across categories such as groceries, utilities, education, and healthcare. The bot generates a consolidated monthly financial report, identifies budget overruns in specific categories, and provides tailored saving strategies to meet family financial goals. This enables better household financial planning, resource allocation, and long-term savings improvement.</p>
-
-          <hr>
-          <h2>Skills Required</h2>
-          <div class="skills"><span>Python</span><span>GeminiAI</span><span>Flask (Web Framework)</span><span>SQLite</span><span>JavaScript (Programming Language)</span></div>
-
-          <h2 class="mentor-title">Mentor</h2>
-          <p class="muted">No mentor assigned yet</p>
-
-          <h2>Project Stats</h2>
-          <div class="stats">
-            <div class="stat purple"><div>◷ &nbsp; Epics</div><strong>Total Epics: 8</strong></div>
-            <div class="stat green"><div>☷ &nbsp; Stories & Subtasks</div><strong>Total Tasks: 15<br>Total Subtasks: 0</strong></div>
-          </div>
-
-          <h2>Technical Architecture</h2>
-          <div class="architecture">
-            <div class="node n1">User / Admin</div><div class="line l1"></div>
-            <div class="node n2">Flask Application</div><div class="line l2"></div>
-            <div class="node n3">AI / Gemini</div><div class="node n4">SQLite Database</div>
-            <div class="node n5">Budget<br>Analysis</div><div class="node n6">Reports<br>Recommendations</div>
-          </div>
-
-          <div class="requirements">
-            <div class="req-tabs"><button class="req-active">System Requirements</button><button>Instructions</button></div>
-            <h3>Hardware Requirements</h3>
-            <p><b>Processor:</b></p>
-            <ul><li>Intel Core i5 (8th Gen or above) / AMD Ryzen 5 or equivalent</li><li>RAM: Minimum 8 GB (Recommended: 16 GB for multitasking and AWS Labs usage)</li><li>Storage: 256 GB SSD (or 500 GB HDD minimum)</li><li>Internet Connectivity: Stable high-speed internet connection (minimum 10 Mbps, recommended 20 Mbps for AWS Labs and deployments)</li></ul>
-            <h3>Software Requirements</h3>
-            <p><b>Operating System:</b></p>
-            <ul><li>Windows 10 / 11, macOS (Monterey or later), or Linux (Ubuntu 20.04+)</li><li>Web Browser: Latest version of Google Chrome, Mozilla Firefox, or Microsoft Edge</li><li>IDE / Code Editor: Visual Studio Code (recommended) or any preferred IDE</li><li>Version Control: Git (latest version installed and configured)</li><li>Additional Tools: Python (version 3.8 or above), AWS CLI (latest version)</li></ul>
-          </div>
+          <p><b>Scenario 1:</b> A salaried professional logs monthly income and daily expenses across rent, food, transport, and entertainment. The system identifies overspending areas and generates an actionable budget plan.</p>
+          <p><b>Scenario 2:</b> A college student uses the advisor to manage a limited monthly allowance across essential and discretionary spending categories and receives recommendations for reducing unnecessary expenses.</p>
+          <p><b>Scenario 3:</b> A freelancer with variable monthly income tracks earnings from multiple clients and project-related expenses. The system adapts recommendations based on income patterns.</p>
+          <p><b>Scenario 4:</b> A household manager monitors shared family income and expenses across groceries, utilities, education, and healthcare and receives a consolidated monthly report.</p>
         </article>
 
-        <aside class="right-panel">
-          <div class="progress-title"><b>Project Progress</b><span>0%</span></div>
-          <div class="progress"><i></i></div>
-          <div class="actions"><button onclick="alert('Add your deployed demo URL here.')">◉ Add Demo Link</button><button onclick="alert('Add your GitHub repository URL here.')">⑂ Add Github</button></div>
+        <div class="stats">
+          <div class="stat purple"><small>Monthly Income</small><strong id="income">₹0</strong></div>
+          <div class="stat green"><small>Total Expenses</small><strong id="expense">₹0</strong></div>
+          <div class="stat blue"><small>Available Balance</small><strong id="balance">₹0</strong></div>
+        </div>
 
-          <div class="panel-section">
-            <h3>Pre-Requisites <span>⌃</span></h3>
-            <div class="mini-chips"><span>Complexity: Medium</span><span>Duration: 2h 0m</span><span>Progress: 0%</span><span>Stories: 1</span></div>
+        <section class="card workspace">
+          <div class="section-title"><h2>Finance Workspace</h2><span id="status">● Demo mode</span></div>
+          <div class="forms">
+            <form id="txForm">
+              <div class="seg"><button type="button" class="kind active" data-kind="expense">Expense</button><button type="button" class="kind" data-kind="income">Income</button></div>
+              <input id="amount" type="number" min="1" step="0.01" placeholder="Amount (₹)" required>
+              <select id="category">
+                <option>Food</option><option>Transport</option><option>Education</option><option>Shopping</option><option>Entertainment</option><option>Rent</option><option>Utilities</option><option>Healthcare</option><option>Other</option>
+              </select>
+              <input id="note" placeholder="Note (optional)">
+              <button class="primary">Add Transaction</button>
+            </form>
+            <div class="advisor">
+              <div class="bot-icon">AI</div>
+              <div><h3 id="adviceTitle">AI Financial Insight</h3><p id="adviceText">Add your income and expenses to receive a personalized insight.</p></div>
+            </div>
           </div>
-          <div class="panel-section collapsible"><h3 onclick="toggle(this)">Project Workflow <span>⌄</span></h3><p>Plan → Develop → Test → Deploy</p></div>
-          <div class="panel-section collapsible"><h3 onclick="toggle(this)">Epic 1: Model Selection and Architecture <span>⌄</span></h3><p>Select the AI model and define the application architecture.</p></div>
-          <div class="panel-section collapsible"><h3 onclick="toggle(this)">Epic 2: Core Functionalities Development <span>⌄</span></h3><p>Income, expense, budget and savings modules.</p></div>
-          <div class="panel-section collapsible"><h3 onclick="toggle(this)">Epic 3: App.py Development <span>⌄</span></h3><p>Flask routes, database connection and application logic.</p></div>
-          <div class="panel-section collapsible"><h3 onclick="toggle(this)">Epic 4: Frontend Development <span>⌄</span></h3><p>Responsive UI and interactive dashboard.</p></div>
-          <div class="panel-section collapsible"><h3 onclick="toggle(this)">Epic 5: Deployment <span>⌄</span></h3><p>Deploy the application and configure the production environment.</p></div>
-          <div class="panel-section collapsible"><h3 onclick="toggle(this)">Conclusion <span>⌄</span></h3><p>The bot provides structured personal finance tracking and AI-assisted recommendations.</p></div>
-        </aside>
+        </section>
+
+        <section class="card">
+          <div class="section-title"><h2>Recent Transactions</h2><button class="ghost" onclick="loadAll()">Refresh</button></div>
+          <div class="table-wrap"><table><thead><tr><th>Type</th><th>Category</th><th>Amount</th><th>Note</th><th>Date</th></tr></thead><tbody id="transactions"></tbody></table></div>
+        </section>
       </div>
-    </div>
+
+      <aside class="right">
+        <div class="progress-card">
+          <div class="progress-title"><b>Project Progress</b><strong>35%</strong></div>
+          <div class="bar"><i></i></div>
+          <div class="mini"><span>Complexity: Medium</span><span>Duration: 2h 0m</span></div>
+        </div>
+        <div class="card">
+          <h3>Project Workflow</h3>
+          <details open><summary>Epic 1: Model Selection and Architecture</summary><p>Define the finance workflow, database structure and AI advisor architecture.</p></details>
+          <details><summary>Epic 2: Core Functionalities Development</summary><p>Income, expenses, categories and summary APIs.</p></details>
+          <details><summary>Epic 3: App.py Development</summary><p>Flask routes and SQLite integration.</p></details>
+          <details><summary>Epic 4: Frontend Development</summary><p>Responsive dashboard and finance workspace.</p></details>
+          <details><summary>Epic 5: Deployment</summary><p>Prepare GitHub repository and deployment configuration.</p></details>
+        </div>
+        <div class="card">
+          <h3>Skills Required</h3>
+          <div class="skills"><span>Python</span><span>GeminiAI</span><span>Flask</span><span>SQLite</span><span>JavaScript</span></div>
+        </div>
+        <div class="card">
+          <h3>Technical Architecture</h3>
+          <div class="architecture">
+            <div>USER</div><div>↓</div><div>Flask API</div><div>↙ &nbsp; ↓ &nbsp; ↘</div><div>SQLite &nbsp; Advisor &nbsp; Frontend</div>
+          </div>
+        </div>
+      </aside>
+    </section>
   </main>
 </div>
-<script>
-function toggle(h){const p=h.nextElementSibling;p.classList.toggle('show');h.querySelector('span').textContent=p.classList.contains('show')?'⌃':'⌄';}
-</script>
+<script src="{{ url_for('static', filename='app.js') }}"></script>
 </body>
 </html>
