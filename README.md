@@ -64,3 +64,7 @@ personal-finance-advisor-bot/
 Create a new GitHub repository, upload all files, commit them, then submit the repository URL.
 
 > Note: This version includes a reliable local advisor/fallback mode. An external Gemini API can be integrated later if required by the mentor.
+>
+> Project Documentation
+
+📄 "View Personal Finance Advisor Bot Report (PDF)" (./Personal_Finance_Advisor_Bot_%20document%20final.pdf)
