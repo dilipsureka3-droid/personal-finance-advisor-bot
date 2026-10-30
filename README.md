@@ -1,6 +1,7 @@
 # Personal Finance Advisor Bot 💰
 
 An AI-style personal finance assistant built with **Python, Flask, SQLite and JavaScript**.
+here you can access the site https://spectacular-halva-1d6c9b.netlify.app
 
 ## Features
 - Income and expense tracking
